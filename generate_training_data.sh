@@ -6,7 +6,7 @@ tesstrain.sh --fonts_dir data/fonts \
 	     --langdata_dir data/lang_data \
 	     --tessdata_dir data/tess_data \
 	     --save_box_tiff \
-	     --maxpages 10 \
+	     --maxpages 250 \
 	     --output_dir data/output
 
 #the max pages will enter the amount of pages to be rendered for training purpose
