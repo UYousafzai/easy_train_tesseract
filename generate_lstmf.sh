@@ -6,4 +6,4 @@ for file in *.tif; do
 done
 mv *.lstmf ../lstmf_data/
 cd ../lstmf_data/
-ls -1 *.lstmf | sort -R > existing_lstmf.txt
+ls -1 *.lstmf | sort -R > eng.training_files.txt
