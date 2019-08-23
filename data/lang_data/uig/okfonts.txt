@@ -1,8 +1,0 @@
-Arial Unicode MS Regular
-DejaVu Sans Bold
-DejaVu Sans
-FreeMono Regular
-FreeSerif Bold
-FreeSerif Regular
-Lucida Sans Oblique
-Lucida Sans Regular
