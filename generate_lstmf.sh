@@ -5,3 +5,5 @@ for file in *.tif; do
   tesseract $file $base lstm.train
 done
 mv *.lstmf ../lstmf_data/
+cd ../lstmf_data/
+ls -1 *.lstmf | sort -R > existing_lstmf.txt
