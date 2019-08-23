@@ -3,13 +3,16 @@
 #### Note: Please Remove the .gitignore files from data/fonts and data/output before using this repository
 
 #### Step 1: Setting Up The Structure for the Repository
-- ├── data
-- |     ├── fonts
-- |     ├── lang_data
-- |     ├── output
-- |     └── tess_data
-- └── generate_training_data.sh
 
+    .
+    ├── data
+    |     ├── fonts
+    |     ├── lang_data
+    |     ├── output
+    |     └── tess_data
+    └── generate_training_data.sh
+  
+  
 #### Note: if you're training an english font, you can skip step 2.
 
 #### Step 2: Downloading Relavent Data
