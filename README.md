@@ -16,9 +16,15 @@
 #### Note: if you're training an english font, you can skip step 2.
 
 #### Step 2: Downloading Relavent Data
-- Place the font you want to train in the fonts folder
-- download from link: https://github.com/tesseract-ocr/langdata and place the data inside the lang_data
-- go to link: https://github.com/tesseract-ocr/ download one specific language from either tessdata_best or tessdata_fast based on your application requirement and place that inside the tessdata folder
+- Place the font you want to train in the fonts folder.
+- download from link: https://github.com/tesseract-ocr/langdata and place the data inside the lang_data.
+- go to link: https://github.com/tesseract-ocr/ download one specific language from either tessdata_best or tessdata_fast based on your application requirement and place that inside the tessdata folder.
+- Updating the variables in script, now since the scripts were written taking english language into consideration you'll have to update those variables to reflect
+your language you need to train the system on. the scripts that require updation are as following
+    - `evaluate.sh where (eng.*) needs to be changed to required (lang.*)`
+    - `extract_model.sh where (eng.*) needs to be changed to required (lang.*)`
+    - `generate_training_data.sh has a variable called --lang eng is where the eng would be replcaed with your lang`
+    - `train.sh where (eng.*) needs to be changed to required (lang.*)`
 
 #### Step 3: Changing the parameters in the generate_training_data.sh and train.sh
 1. In generate_training_data.sh
