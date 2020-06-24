@@ -17,11 +17,17 @@ Place the data tif files in the raw_data folder
 download from link: https://github.com/tesseract-ocr/langdata and place the data inside the lang_data
 go to link: https://github.com/tesseract-ocr/ download one specific language from either tessdata_best or tessdata_fast based on your application requirement and place that inside the tess_data folder
 
-#### Step 3: You will have to update the train.sh file to fit your needs,
+#### Step 3: Updating Variables to fit Language Needs
+- `evaluate.sh where (eng.*) needs to be changed to required (lang.*)`
+- `extract_model.sh where (eng.*) needs to be changed to required (lang.*)`
+- `generate_lstmf.sh where (eng.*) needs to be changed to required (lang.*)`
+- `train.sh where (eng.*) needs to be changed to required (lang.*)`
+
+#### Step 4: You will have to update the train.sh file to fit your needs,
 example: change --max_iterations to anything that you think would be suitable for your custom data, other than this, there are not
 many changes to be made in most cases.
 
-##### Step 4: Running the pipeline
+##### Step 5: Running the pipeline
 `run the command: execute_train_pipeline.sh`
 
 The pipeline will do the following things:
